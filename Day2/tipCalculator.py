@@ -5,7 +5,8 @@ people_to_share = int(input("Enter number of people to share the amount : "))
 #Calculation
 tip_amount = (tip_in_percentage/bill_amount)* 100
 total_bill = round((bill_amount + tip_amount),2)
-individual_share = round((total_bill / people_to_share),2)
+#individual_share = round((total_bill / people_to_share),2)
+individual_share = "{:.2f}".format(total_bill / people_to_share)
 
 print("*************************\n")
 print(f"Total bill amount : ${total_bill}")
