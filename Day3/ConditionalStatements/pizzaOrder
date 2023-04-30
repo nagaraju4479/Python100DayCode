@@ -1,0 +1,30 @@
+size = input("Which size of pizza you want L , M  or S  :")
+pepparoni = input("You want me add pepporoni ? Y or N : ")
+cheeze = input("You want me to add cheeze ? Y or N : ")
+large_pizza_price = 7
+medium_pizza_price = 5
+small_pizza_price = 3
+pepparoni_price = 3
+cheeze_price = 1
+bill = 0
+
+#Logic
+if size == "L":
+    bill = large_pizza_price
+elif size == "M":
+    bill = medium_pizza_price
+elif size == "S":
+    bill = small_pizza_price
+else:
+    print("Invalid Entry")
+
+if pepparoni == 'Y' or 'y':
+    bill += pepparoni_price
+
+if cheeze == 'Y' or 'y':
+    bill += cheeze_price
+
+print(f"Total Bill :${bill}")
+
+
+     
